@@ -1,0 +1,36 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    
+    <!-- Nav tab icon -->
+	<dimen name="nav_icon">28dip</dimen>
+
+	<!-- Width -->
+	<dimen name="width_date">85dip</dimen>
+
+	<!-- Height -->
+	<dimen name="height_nav">46dip</dimen>
+	<dimen name="height_title">44dip</dimen>
+	<dimen name="height_itable_min">45dip</dimen>
+	<dimen name="height_edit_min">32dip</dimen>
+
+	<!-- Edge -->
+	<dimen name="edge_super_small">2dip</dimen>
+	<dimen name="edge_small">5dip</dimen>
+	<dimen name="edge_normal">10dip</dimen>
+	<dimen name="edge_large">20dip</dimen>
+	<dimen name="edge_super_large">23dip</dimen>
+
+	<!-- Font -->
+	<dimen name="font_title_small">18dip</dimen>
+	<dimen name="font_title_normal">20dip</dimen>
+	<dimen name="font_title_large">20dip</dimen>
+	<dimen name="font_caption">26dip</dimen>
+	<dimen name="font_super_small">12dip</dimen>
+	<dimen name="font_small">14dip</dimen>
+	<dimen name="font_normal">16dip</dimen>
+	<dimen name="font_large">18dip</dimen>
+
+</resources>

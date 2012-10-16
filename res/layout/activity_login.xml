@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"  >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/title" />
+    
+    <!-- Login box -->
+	<LinearLayout
+		android:id="@+id/layoutLoginBox"
+		android:layout_below="@+id/imgLogo"
+		android:layout_width="fill_parent"
+		android:layout_height="200dip"
+		android:layout_marginTop="@dimen/edge_super_large" 
+		android:layout_gravity="center"
+		android:layout_marginLeft="@dimen/edge_large"
+		android:layout_marginRight="@dimen/edge_large"
+		android:orientation="vertical"
+		android:background="@drawable/bg_square"
+		>
+
+		<!-- username -->
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/edge_large"
+			android:layout_marginLeft="@dimen/edge_large"
+			android:layout_marginRight="@dimen/edge_large"
+			android:gravity="center"
+			>
+			<TextView
+				style="@style/FontLarge.Black"
+				android:layout_width="65dip"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/edge_small"
+				android:gravity="left"
+				android:text="@string/label_username"
+				/>
+			<EditText
+				style="@style/Edit"
+				android:id="@+id/editUsername"
+				android:maxLength="30"
+				/>
+		</LinearLayout>
+
+		<!-- password -->
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/edge_small"
+			android:layout_marginLeft="@dimen/edge_large"
+			android:layout_marginRight="@dimen/edge_large"
+			android:gravity="center"
+			>
+			<TextView
+				style="@style/FontLarge.Black"
+				android:layout_width="65dip"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/edge_small"
+				android:gravity="left"
+				android:text="@string/label_passwd"
+				/>
+			<EditText
+				style="@style/Edit"
+				android:id="@+id/editPasswd"
+				android:inputType="textPassword"
+				/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/edge_normal"
+			android:layout_marginBottom="@dimen/edge_small"
+			android:orientation="horizontal"
+			android:gravity="center"
+			>
+			<ProgressBar
+				style="@android:style/Widget.ProgressBar.Small.Inverse"
+				android:id="@+id/progressBar"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="invisible"
+				/>
+		</LinearLayout>
+
+		<!-- submit button -->
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:background="@drawable/bg_square_bottom"
+			>
+			<Button
+				style="@style/Button.Black"
+				android:id="@+id/btnLogin"
+				android:layout_width="240dip"
+				android:layout_height="wrap_content"
+				android:text="@string/label_login" />
+		</LinearLayout>
+	</LinearLayout>
+    
+
+
+</RelativeLayout>
